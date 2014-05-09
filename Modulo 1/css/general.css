@@ -1,0 +1,127 @@
+body{
+	background-color: #CCCCCC;
+}
+
+a{
+	text-decoration: none;
+}
+
+/******* HEADER ********/
+
+#header{
+	background-color: black;
+	height: 180px;
+}
+
+#header img{
+	float: left;
+}
+
+.headerText{
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+	color:#FFF;
+	/*For vertical center*/
+	display:table-cell;
+    vertical-align:middle;
+	height: 150px;
+}
+
+#header img{
+	float: left;
+	height: 150px;
+	width: 300px;
+	padding: 15px;
+}
+
+/******* MAIN CONTENT ********/
+
+article{
+	clear:both;
+}
+
+article h1{
+	color:#D40412;
+	text-align:center;
+	font-size:45px;
+	padding:10px;
+}
+
+article p{
+	text-align:left;
+	color:#555;
+	font-size:15px;
+	padding:10px;
+}
+
+/******* FOOTER ********/
+
+#footer{
+	clear:both;
+	height: 120px;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	color: #FFF;
+	background-color: black;
+	padding: 20px;
+}
+
+#footer a{
+	color: #fff;
+}
+
+.footer-content{
+	text-align: center;
+}
+
+/******* CONTACT LIST ********/
+
+.contact{
+	width: 500px;
+	margin: 50px;
+}
+
+.contact label{
+	display:block;
+	margin-bottom:5px;
+	position:relative;
+}
+
+.contact input{
+	width: 350px;
+	border: solid 2px #333333;
+	margin-bottom:5px;
+}
+
+.contact textarea{
+	width: 484px;
+	border: solid 2px #333333;
+}
+
+.contact ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+article div#msgPanelError p{
+	border: solid 3px red;
+	color: red;
+}
+
+article div#msgPanelSuccess p, div#msgPanelDeleteSuccess p{
+	border: solid 3px green;
+	color: green;
+}
+
+.contact ul li{
+	border: solid 3px #777;
+	margin: 20px 0px;
+	padding: 20px;
+	background-color: #888;
+}
+
+.contact ul li img{
+	width: 40px;
+	height: 40px;
+}

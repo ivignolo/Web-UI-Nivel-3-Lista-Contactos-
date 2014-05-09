@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Modulo 2 exercise</title>
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	
+  </head>
+  <body>
+	
+	<header>
+		<div id="header">
+			<img src="images/contacts.jpg"/>
+			<div class="headerText">
+				Contacts manager App
+			</div>
+		</div>
+	</header>
+	<nav>	
+		
+	</nav>
+	<article>
+	
+		<div id="msgPanelError" style="display:none"></div>
+		<div id="msgPanelSuccess" style="display:none"></div>
+		<div id="msgPanelDeleteSuccess" style="display:none"></div>
+		
+		<div class="contact">
+			<h2>Contacto nuevo:</h2>
+			<form id="contactForm">
+				<label for="name">Nombre:</label> <input id="name" type="text"><br />
+				<label for="name">Apellido:</label> <input id="surname" type="text"><br />
+				<label for="email">Email:</label> <input id="email" type="text"><br />
+				<label for="phone">Telefono:</label> <input id="phone" type="text"><br /><br />
+				<button id="addButton">Agregar Contacto</button>
+			</form>
+		</div>	
+		
+		<div class="contact">
+			<h2>Lista de Contactos:</h2>
+			<ul id="contacts-container">
+			</ul>
+		</div>
+				
+		<script data-main="js/main" src="js/require.js"></script>
+				
+		<!-- Templates -->
+		
+		<script id="contactTemplate" type="text/x-handlebars-template">
+			<img src="images/contactImg.jpg"/><br /><br />
+			Nombre: <span class="name">{{name}}</span><br />
+			Apellido:<span class="surname">{{surname}}</span><br />
+			Email:<span class="email">{{email}}</span><br />
+			Telefono:<span class="phone">{{phone}}</span><br /><br />
+			<a href="#" class="edit">[edit]</a>
+			<a href="#" class="delete">[delete]</a>
+		</script>
+		
+		<!--<script type="text/template" id="contactTemplateUnderscore">
+			<img src="images/contactImg.jpg"/><br /><br />
+			Nombre: <span class="name"><%=name%></span><br />
+			Apellido:<span class="surname"><%=surname%></span><br />
+			Email:<span class="email"><%=email%></span><br />
+			Telefono:<span class="phone"><%=phone%></span><br /><br />
+			<a href="#" class="edit">[edit]</a>
+			<a href="#" class="delete">[delete]</a>
+		</script>-->
+				
+	</article>
+	<footer>
+		<div id="footer">
+			<div class="footer-content">
+				<p>
+				  Ignacio Vignolo |
+				  Software developer |
+				  <a href="contacto.html" title="Objetos">Contacto</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+  </body>
+</html>
